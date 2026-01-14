@@ -1,0 +1,108 @@
+/* ===================================
+   HOME PAGE - MINIMALIST & RESPONSIVE
+   =================================== */
+
+.home {
+  min-height: 100vh;
+}
+
+/* Features Section */
+.features {
+  background: var(--white);
+  padding: var(--spacing-3xl) var(--spacing-lg);
+}
+
+.features-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: var(--spacing-2xl);
+  color: var(--gray-900);
+  font-weight: 700;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.feature-card {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-base);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  border-radius: var(--radius-xl);
+  color: var(--white);
+}
+
+.feature-card h3 {
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: var(--gray-600);
+  line-height: 1.6;
+  font-size: 0.9375rem;
+}
+
+/* ===================================
+   RESPONSIVE - MOBILE
+   =================================== */
+
+@media (max-width: 767px) {
+  .features {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 2rem;
+  }
+}
+
+/* ===================================
+   RESPONSIVE - TABLET
+   =================================== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .features {
+    padding: var(--spacing-3xl) var(--spacing-xl);
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

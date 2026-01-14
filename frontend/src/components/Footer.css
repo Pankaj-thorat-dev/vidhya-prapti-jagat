@@ -1,0 +1,131 @@
+/* ===================================
+   FOOTER - MINIMALIST & RESPONSIVE
+   =================================== */
+
+.footer {
+  background: var(--gray-900);
+  color: var(--gray-300);
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--spacing-3xl) var(--spacing-lg) var(--spacing-xl);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.footer-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.footer-section h4 {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.footer-section p {
+  opacity: 0.9;
+  line-height: 1.6;
+  font-size: 0.9375rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer-section ul li a {
+  color: var(--gray-300);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  transition: color var(--transition-fast);
+  display: inline-block;
+}
+
+.footer-section ul li a:hover {
+  color: var(--white);
+  transform: translateX(4px);
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: var(--spacing-md);
+  font-size: 1.5rem;
+  margin-top: var(--spacing-md);
+}
+
+.social-links a {
+  color: var(--gray-300);
+  transition: all var(--transition-fast);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: var(--gray-800);
+}
+
+.social-links a:hover {
+  color: var(--white);
+  background: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background: var(--gray-800);
+  padding: var(--spacing-lg);
+  text-align: center;
+  border-top: 1px solid var(--gray-700);
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--gray-400);
+}
+
+/* ===================================
+   RESPONSIVE - MOBILE
+   =================================== */
+
+@media (max-width: 767px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+    gap: var(--spacing-xl);
+    text-align: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .footer-section ul li a:hover {
+    transform: none;
+  }
+}
+
+/* ===================================
+   RESPONSIVE - TABLET
+   =================================== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
