@@ -52,6 +52,7 @@ const Navbar: React.FC = () => {
           <li><Link to="/" onClick={closeMenu}>Home</Link></li>
           <li><Link to="/shop" onClick={closeMenu}>Shop</Link></li>
           <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+          <li><Link to="/PrivacyPolicy" onClick={closeMenu}>PrivacyPolicy</Link></li>
           
           {user ? (
             <>
