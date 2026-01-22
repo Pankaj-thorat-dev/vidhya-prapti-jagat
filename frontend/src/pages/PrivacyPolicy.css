@@ -1,0 +1,57 @@
+.privacy-wrapper {
+  background-color: #f9fafb;
+  padding: 40px 16px;
+}
+
+.privacy-container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 8px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.org-name {
+  text-align: center;
+  font-weight: bold;
+}
+
+.effective-date {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #555;
+}
+
+.intro {
+  margin-bottom: 24px;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+.contact {
+  margin-top: 8px;
+}
