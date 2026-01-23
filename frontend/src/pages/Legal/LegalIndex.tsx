@@ -21,7 +21,7 @@ const LegalIndex = () => {
     {
       title: "Privacy Policy",
       description: "Learn how we collect, use, and protect your personal information and data.",
-      link: "/Privacy"
+      link: "/PrivacyPolicy"
     },
     {
       title: "Cancellation and Refund",
@@ -70,5 +70,6 @@ const LegalIndex = () => {
     </div>
   );
 };
+
 
 export default LegalIndex;
