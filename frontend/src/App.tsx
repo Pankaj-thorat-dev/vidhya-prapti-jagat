@@ -17,7 +17,8 @@ import ManageNotes from './pages/ManageNotes';
 import ManageOrders from './pages/ManageOrders';
 import ManageContacts from './pages/ManageContacts';
 import MyOrders from './pages/MyOrders';
-import PrivacyPolicy from './pages/PrivacyPolicy';
+
+
 import './App.css';
 
 function App() {
@@ -34,7 +35,12 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
-              <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+
+              <Route path="/Legal" element={<LegalIndex/>} />
+              <Route path="/terms" element={<TermsAndConditions/>} />
+              <Route path="/refund" element={<RefundPolicy/>} />
+              <Route path="/shipping" element={<ShippingPolicy/>} />
+              <Route path="/Privacy" element={<PrivacyPolicy/>} />
               
               <Route
                 path="/my-orders"
