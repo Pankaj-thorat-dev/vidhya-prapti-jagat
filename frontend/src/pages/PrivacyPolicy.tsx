@@ -105,7 +105,7 @@ const PrivacyPolicy = () => {
             <br />
             📍 Atru, Rajasthan
             <br />
-            📞 8005685449
+            📞 8005685448
           </p>
         </section>
       </div>
