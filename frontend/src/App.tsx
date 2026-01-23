@@ -17,8 +17,11 @@ import ManageNotes from './pages/ManageNotes';
 import ManageOrders from './pages/ManageOrders';
 import ManageContacts from './pages/ManageContacts';
 import MyOrders from './pages/MyOrders';
-
-
+import LegalIndex from './pages/Legal/LegalIndex';
+import TermsAndConditions from './pages/Legal/TermsAndConditions';
+import RefundPolicy from './pages/Legal/RefundPolicy';
+import ShippingPolicy from './pages/Legal/ShippingPolicy';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import './App.css';
 
 function App() {
